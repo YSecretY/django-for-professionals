@@ -20,7 +20,7 @@ SECURE_COOKIE_SECURE = env.bool('DJANGO_SESSION_COOKIE_SECURE', default=True)
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 CSRF_COOKIE_SECURE = env.bool('DJANGO_CSRF_COOKIE_SECURE', default=True)
 
-ALLOWED_HOSTS = ['https://books-dfp.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['books-dfp.onrender.com', 'localhost', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
