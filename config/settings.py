@@ -150,7 +150,7 @@ STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 #     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 # ]
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 """End static files stuff"""
 
