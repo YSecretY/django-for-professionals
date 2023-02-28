@@ -139,6 +139,8 @@ USE_I18N = True
 
 USE_TZ = True
 
+"""Static files stuff"""
+
 STATIC_URL = 'static/'
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
@@ -148,7 +150,9 @@ STATIC_ROOT = str(BASE_DIR.joinpath('staticfiles'))
 #     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 # ]
 
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+"""End static files stuff"""
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = str(BASE_DIR.joinpath('media'))
