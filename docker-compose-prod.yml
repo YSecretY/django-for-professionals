@@ -14,6 +14,7 @@ services:
       - "DJANGO_SECRET_KEY=ldBHq0YGYxBzaMJnLVOiNG7hruE8WKzGG2zGpYxoTNmphB0mdBo"
   db:
     image: postgres:11
+    command: python manage.py migrate
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     environment:
